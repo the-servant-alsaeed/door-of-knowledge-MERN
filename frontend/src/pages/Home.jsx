@@ -13,7 +13,7 @@ const Home = () => {
    useEffect(() => {
       setLoading(true);
       axios
-          .get('http://localhost:5555/books')
+          .get('https://door-of-knowledge-mern-backend.vercel.app/books')
           .then((response) => {
              //data.data because inside data there is count and data
              setBooks(response.data.data);
