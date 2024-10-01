@@ -12,7 +12,7 @@ const DeleteBook = () => {
    const handleDeleteBook = () => {
       setLoading(true);
       axios
-          .delete(`https://door-of-knowledge-mern-backend.vercel.app/books/${id}`)
+          .delete(`http://localhost:5555/books/${id}`)
           .then(() => {
              setLoading(false);
              navigate('/');
